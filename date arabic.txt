@@ -1,0 +1,15 @@
+<script>
+    
+    var months = ["يناير", "فبراير", "مارس", "إبريل", "مايو", "يونيو",
+              "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
+
+var days =["اﻷحد","اﻷثنين","الثلاثاء","اﻷربعاء","الخميس","الجمعة","السبت"];
+
+var date = new Date();
+                                         
+var AthletixDate=days[date.getDay()]+" "+date.getDate()+" " +months[date.getMonth()]+" "+date.getUTCFullYear() +" "+" "+date.getUTCHours()+":" + (date.getMinutes() < 10 ? '0' : '') + date.getMinutes()+" "+"جرينيتش";
+ 
+console.log(AthletixDate);
+  document.getElementById('laith').textContent=AthletixDate;
+ 
+</script>
